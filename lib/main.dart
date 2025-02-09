@@ -5,11 +5,9 @@ import 'firebase_options.dart';
 import 'features/auth/controllers/auth_controller.dart';
 import 'features/chat/controllers/chat_controller.dart';
 import 'features/auth/screens/login_screen.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await dotenv.load();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
